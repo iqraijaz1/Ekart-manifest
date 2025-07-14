@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ekart
-          image: iqraijaz/ekart:latest # Image that will be used to containers in the cluster
+          image: iqraijaz/ekart:28
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80 # The port that the container is running on in the cluster
