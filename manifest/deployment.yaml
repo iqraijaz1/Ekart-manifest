@@ -17,7 +17,7 @@ spec:
           image: iqraijaz/ekart:28
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 80 # The port that the container is running on in the cluster
+            - containerPort: 8070 # The port that the container is running on in the cluster
 
 
 ---
@@ -32,6 +32,6 @@ spec:
     app: ekart
   ports:
     - protocol: "TCP"
-      port: 80 # The port that the service is running on in the cluster
-      targetPort: 80 # The port exposed by the service
+      port: 8070 # The port that the service is running on in the cluster
+      targetPort: 8070 # The port exposed by the service
 
